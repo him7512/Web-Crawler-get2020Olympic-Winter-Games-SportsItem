@@ -90,7 +90,7 @@ class Consumer_writeInformation(threading.Thread):
             if self.sport_queue.empty() and switch == 1:
                 break
             try:
-                data = self.sport_queue.get(timeout=5)
+                data = self.sport_queue.get(timeout=15)
                 # csvfile = open(filename, mode='w', newline='')
                 # fieldnames = ['时间', '大项', '比赛', '场馆']
                 # # 创建 DictWriter 对象
